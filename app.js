@@ -1,3 +1,6 @@
+
+
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -14,11 +17,14 @@ var MongoStore = require('connect-mongo')(session);
 
 var routes = require('./routes/index');
 var userRoutes = require('./routes/user');
-
+var bodyParser = require('body-parser');
 
 var app = express();
 
 var mongoDB = 'mongodb://127.0.0.1/kopi';
+
+
+
 
 mongoose.connect(mongoDB);
 require('./config/passport');
@@ -74,6 +80,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
   
 });
+
+
 
 module.exports = app;
 console.log('connected to localhost:8888');

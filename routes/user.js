@@ -2,13 +2,19 @@ var express = require('express');
 var router = express.Router();
 var csrf = require('csurf');
 var passport = require('passport');
+var Profile = require('../models/profile');
 
 var csrfProtection = csrf();
 router.use(csrfProtection);
-  //////////////PROFILE
-  router.get('/profile', isLoggedIn, function(req, res, next){
-    res.render('user/profile');
-  });
+
+ ///////lihat data profil
+
+ router.get('/profile', isLoggedIn, function(req, res, next) {
+  Profile.find()
+      .then(function(doc) {
+        res.render('user/profile', {items: doc});
+      });
+});
   ////LOGOUT
 router.get('/logout', isLoggedIn, function(req, res, next){
     req.logout();

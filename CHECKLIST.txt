@@ -1,2 +1,28 @@
-tutorial sampai no.11
+tutorial sampai no.12
 all fix no bug
+
+tutorial sampai no. 13
+banyak yg belom paham yaitu cara masang bootstrap, dan masang logicnya ke dalam bootsrap
+
+tutorial no. 14
+error karena bagian button udah versi terbaru sedangkan tutorial versi lama
+
+tutorial no 15
+belom paham juga tentang pakai API untuk jualan
+
+tutorial no 16
+bahas ijo ijonya itu disitu yg di atas tengah
+
+tutorial no 17
+mbahas tentang user order, payment dll dan store to database
+
+tutorial no 18
+mbahas tentang kalau mau add to shopping chart haus pakai id
+
+tutorial no 19
+memasukkan data profile tentag apa yg dia beli
+
+tutorial no 20
+membahas tentang mengurangi jumlah dan menghapus barang yg dibeli
+
+/////////progress

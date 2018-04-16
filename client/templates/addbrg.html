@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" class="glyphicon glyphicon-plus"> </span> Tambah Barang</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="addProducts()">
+    <div class="form-group">
+      <label for="name">Link Gambar :</label>
+      <input type="text" class="form-control" id="imagePath" ng-model="product.imagePath">
+    </div>
+    <div class="form-group">
+      <label for="dept">Nama Produk:</label>
+      <input type="text" class="form-control" id="title" ng-model="product.title">
+    </div>
+    <div class="form-group">
+      <label for="area">Deskripsi :</label>
+      <input type="text" class="form-control" id="description" ng-model="product.description">
+    </div>
+    <div class="form-group">
+      <label for="status">Harga :</label>
+      <input type="text" class="form-control" id="price" ng-model="product.price">
+      </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Save</button>
+    <a href="#/products" class="btn btn-default"> Cancel</a>
+</form>		
+    <div>
+<div>

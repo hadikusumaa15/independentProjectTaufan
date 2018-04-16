@@ -1,0 +1,43 @@
+<div class="panel panel-default" ng-init="showPesanan()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" 
+class="glyphicon glyphicon-edit"> </span> Verifikasi Pembeli</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="updatePesanan()">
+    <div class="form-group">
+      <label for="name">Nama:</label>
+      <input type="text" class="form-control" id="name" ng-model="pesan.nama" value="pesan.nama">
+    </div>
+    <div class="form-group">
+      <label for="dept">No.telp:</label>
+      <input type="text" class="form-control" id="dept" ng-model="pesan.nohp" value="pesan.nohp">
+    </div>
+    <div class="form-group">
+      <label for="area">Alamat:</label>
+      <input type="text" class="form-control" id="area" ng-model="pesan.alamat" value="pesan.alamat">
+    </div>
+    <div class="form-group">
+      <label for="status">Kode Pos :</label>
+      <input type="text" class="form-control" id="status" ng-model="pesan.kodepos" value="pesan.kodepos">
+      </div>
+      <div class="form-group">
+    <div class="form-group">
+      <label for="contact">Pesanan :</label>
+      <input type="text" class="form-control" id="contact" ng-model="pesan.pesanan" value="pesan.pesanan">
+      </div>
+      <div class="form-group">
+        <label for="contact">Total Harga :</label>
+        <input type="text" class="form-control" id="contact" ng-model="pesan.harga" value="pesan.harga">
+        </div>
+        <div class="form-group">
+          <label for="contact">Status Pengiriman :</label>
+          <input type="text" class="form-control" id="contact" ng-model="pesan.status" value="pesan.status">
+          </div>
+      
+    
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Verify</button>
+    <a href="#/pesanan" class="btn btn-default"> Cancel</a>
+</form>		
+    <div>
+<div>

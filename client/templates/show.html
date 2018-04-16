@@ -1,0 +1,21 @@
+<div class="panel panel-default" ng-init="showPesanan()">
+	<div class="panel-heading">
+	  <p class="panel-title"> Informasi Pembeli</p>
+	</div>
+	<div class="panel-body">
+		<form>
+		<div class="form-group">
+		 <label class="form-control">Nama: {{ pesan.nama }}</label>
+		 <label class="form-control">No.Telp/HP: {{ pesan.nohp }}</label>
+		 <label class="form-control">Alamat: {{ pesan.alamat }}</label>
+		 <label class="form-control">Kode POS: {{ pesan.kodepos }}</label>
+		 <label class="form-control">Pesanan: {{ pesan.pesanan }}</label>
+		 <label class="form-control">Total Harga: {{ pesan.harga }}</label>
+		 <label class="form-control">Status Pengiriman: {{ pesan.status }}</label>
+		 <label class="form-control">user ID: {{ users._id }}</label>
+		 <label class="form-control">ID: {{ pesan._id }}</label>
+		<a href="#/pesanan" class="btn btn-default"> Ok</a>
+		</div>
+	</form>		
+    <div>
+<div>

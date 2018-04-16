@@ -19,7 +19,13 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/"><i class="fas fa-shopping-cart"></i> DAFTAR BELANJA </a></li>
+        <li><a href="/shopping-cart">
+        <span class="badge">{{session.cart.totalQty}}</span>
+        <i class="fas fa-shopping-cart"></i> DAFTAR BELANJA 
+        
+        </a></li>
+        
+        
         <li class="dropdown">
           <a href="/add-to-cart/{{this._id}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-address-book"></i> USER <span class="caret"></span></a>
           <ul class="dropdown-menu">

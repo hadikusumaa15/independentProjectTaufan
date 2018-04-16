@@ -1,0 +1,30 @@
+<div class="panel panel-default" ng-init="getPesanan()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" 
+class="glyphicon glyphicon-list"> </span> Daftar Pesanan</p>
+	</div>
+	<div class="panel-body">
+		<table class="table table-striped">
+			<thead>
+			<tr>
+			  <th>Nama</th>
+				<th>No.Telp/HP</th>
+				<th>Status</th>
+			  <th>Menu</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="pesan in pesanan">
+			  <td>{{ pesan.nama }}</td>
+			  <td>{{ pesan.nohp }}</td>
+			  <td>{{ pesan.status }}</td>
+			  <td> 
+			    <a href="#/pesanan/{{pesan._id}}/show" class="btn btn-info"> Detail  </a>
+			    <a href="#/pesanan/{{pesan._id}}/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> Verifikasi  </a>
+			  	<a ng-click="deletePesanan(pesan._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span> Delete </a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>		
+    <div>
+<div>
