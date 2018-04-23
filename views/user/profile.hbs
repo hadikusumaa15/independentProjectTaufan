@@ -1,0 +1,36 @@
+<h1> Daftar Pembelian {{emaile}} </h1>
+
+<section class="get">
+
+    <div>
+   
+  
+        {{#each items }}
+        
+        
+            <article class="item">
+           
+                <div>Nama: {{ this.nama }}</div>
+                <div>No.Telp/HPt: {{ this.nohp }}</div>
+                <div>Alamat: {{ this.alamat }}</div>
+                <div>Kode Pos: {{ this.kodepos }}</div>
+                <div>Pesanan: {{ this.pesanan }}</div>
+                <div>Total Harga: {{ this.harga }}</div>
+                <div>Status Pengiriman: {{ this.status }}</div>
+                <div>ID: {{ this._id }}</div>
+                 <div>email: {{ this.email }}</div>
+                 <div>userid: {{this.userid}}</div>
+                 <div>-----------------------------------------</div>
+
+            </article>
+
+        {{/each}}
+
+
+             
+     
+        
+                 
+
+    </div>
+</section>

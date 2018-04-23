@@ -1,0 +1,17 @@
+<div class="panel panel-default" ng-init="showProducts()">
+	<div class="panel-heading">
+	  <p class="panel-title"> Informasi Barang</p>
+	</div>
+	<div class="panel-body">
+		<form>
+		<div class="form-group">
+		 <label class="form-control">Link Gambar: {{ product.imagePath }}</label>
+		 <label class="form-control">Nama Barang: {{ product.title }}</label>
+		 <label class="form-control">Deskripsi: {{ product.description }}</label>
+		 <label class="form-control">Harga: {{ product.price }}</label>
+		 <label class="form-control">ID: {{ product._id }}</label>
+		<a href="#/products" class="btn btn-default"> Ok</a>
+		</div>
+	</form>		
+    <div>
+<div>

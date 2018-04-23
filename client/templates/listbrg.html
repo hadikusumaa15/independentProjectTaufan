@@ -1,0 +1,30 @@
+<div class="panel panel-default" ng-init="getProducts()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" 
+class="glyphicon glyphicon-list"> </span> Daftar Barang</p>
+	</div>
+	<div class="panel-body">
+		<table class="table table-striped">
+			<thead>
+			<tr>
+			  <th>Nama</th>
+				<th>Deskripsi</th>
+				<th>Harga(Rp)</th>
+			  <th>Menu</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="product in products">
+			  <td>{{ product.title }}</td>
+			  <td>{{ product.description }}</td>
+			  <td>{{ product.price }}</td>
+			  <td> 
+			    <a href="#/products/{{product._id}}/show" class="btn btn-info"> Detail  </a>
+			    <a href="#/products/{{product._id}}/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> Verifikasi  </a>
+			  	<a ng-click="deleteProducts(product._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span> Delete </a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>		
+    <div>
+<div>
